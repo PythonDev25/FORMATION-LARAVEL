@@ -10,6 +10,9 @@ Route::get('/menu', function () {
     return "MENU DU JOUR";
 });
 
+Route::redirect('/', '/menu');
+
+
 Route::get('/produit/{phone}', function ($phone) {
     return "voulez vous acheter le ". $phone;
 });
